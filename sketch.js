@@ -86,3 +86,9 @@ function mouseDragged(){
 function mouseReleased(){
     launcher.fly();
 }
+
+function keyPressed(){
+    if(keyCode === 32){
+        launcher.reset(polygon.body);
+    }
+}
